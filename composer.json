@@ -1,0 +1,23 @@
+{
+    "name": "fawno/simple-svg",
+    "description": "Simple PHP class for creating SVG documents",
+    "type": "library",
+    "keywords": ["svg"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fernando Herrero",
+            "homepage": "https://lab.fawno.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+				"ext-simplexml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleSVG\\": "src/"
+        }
+    }
+}
