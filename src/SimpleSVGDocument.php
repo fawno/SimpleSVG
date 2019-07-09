@@ -2,14 +2,14 @@
 /*******************************************************************************
   Simple SVG - Simple PHP class for creating SVG documents
     Author          : Fernando Herrero
-    Version         : 1.0.0
+    Version         : 1.0.1
     License         : MIT
 		Home page       : https://github.com/fawno/SimpleSVG
 *******************************************************************************/
 
 	namespace SimpleSVG;
 
-	use SimpleSVGElement;
+	use SimpleSVG\SimpleSVGElement;
 
 	class SimpleSVGDocument {
 		protected $svg = null;

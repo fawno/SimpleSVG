@@ -1,5 +1,6 @@
 {
     "name": "fawno/simple-svg",
+    "version": "1.0.1",
     "description": "Simple PHP class for creating SVG documents",
     "type": "library",
     "keywords": ["svg"],
