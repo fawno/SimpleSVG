@@ -2,7 +2,7 @@
 /*******************************************************************************
   Simple SVG - Simple PHP class for creating SVG documents
     Author          : Fernando Herrero
-    Version         : 1.0.1
+    Version         : 1.0.2
     License         : MIT
 		Home page       : https://github.com/fawno/SimpleSVG
 *******************************************************************************/
