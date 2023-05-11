@@ -13,7 +13,7 @@ Simple PHP class for creating SVG documents
 ## Instalation
 
 ```sh
-php composer.phar require "fawno/simplesvg"
+php composer.phar require "fawno/simplesvg:@stable"
 ```
 
 ```php

@@ -2,7 +2,7 @@
 /*******************************************************************************
   Simple SVG - Simple PHP class for creating SVG documents
     Author          : Fernando Herrero
-    Version         : 1.0.2
+    Version         : 1.0.3
     License         : MIT
 		Home page       : https://github.com/fawno/SimpleSVG
 *******************************************************************************/
@@ -38,6 +38,22 @@
 
 		public function __call ($method, $arguments) {
 			return call_user_func_array ([$this->svg, $method], $arguments);
+		}
+
+		public function getWidth () {
+			return $this->width;
+		}
+
+		public function getHeight () {
+			return $this->height;
+		}
+
+		public function setWidth (float $width) {
+			$this->width = $width;
+		}
+
+		public function setHeight (float $height) {
+			$this->height = $height;
 		}
 
 		public function getXmin () {
