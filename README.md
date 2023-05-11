@@ -1,5 +1,5 @@
 [![GitHub license](https://img.shields.io/github/license/fawno/SimpleSVG.svg)](https://github.com/fawno/SimpleSVG/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/release/fawno/SimpleSVG.svg)](https://github.com/fawno/SimpleSVG/releases)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/fawno/SimpleSVG.svg)](https://github.com/fawno/SimpleSVG/tags)
 [![Packagist](https://img.shields.io/packagist/v/fawno/SimpleSVG.svg)](https://packagist.org/packages/fawno/simplesvg)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/fawno/SimpleSVG)](https://packagist.org/packages/fawno/simplesvg/stats)
 [![GitHub issues](https://img.shields.io/github/issues/fawno/SimpleSVG)](https://github.com/fawno/SimpleSVG/issues)
