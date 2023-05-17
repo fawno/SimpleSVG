@@ -9,7 +9,9 @@
 
 	namespace SimpleSVG;
 
-	class SimpleSVGElement extends \SimpleXMLElement {
+	use SimpleXMLElement;
+
+	class SimpleSVGElement extends SimpleXMLElement {
 		public function addAttributes (array $attributes) {
 			foreach ($attributes as $attribute => $value) {
 				unset($this->attributes()[$attribute]);

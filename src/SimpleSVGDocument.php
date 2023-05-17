@@ -13,7 +13,7 @@
 
 	class SimpleSVGDocument {
 		protected $svg = null;
-		protected $attr = null;
+		protected $attr = [];
 
 		protected $width = null;
 		protected $height = null;
@@ -38,6 +38,10 @@
 
 		public function __call ($method, $arguments) {
 			return call_user_func_array ([$this->svg, $method], $arguments);
+		}
+
+		public function getID () {
+			return $this->attr['id'] ?? null;
 		}
 
 		public function getWidth () {
