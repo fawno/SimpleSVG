@@ -96,7 +96,7 @@
 			$this->svg->addAttributes(['flipy' => $this->flipy]);
 		}
 
-		public function output (string $filename = null) {
+		public function output (?string $filename = null) {
 			$this->attr['viewBox'] = implode(',', [$this->scale * $this->xmin - $this->margin, $this->scale * $this->ymin - $this->margin, $this->scale * $this->width + 2 * $this->margin, $this->scale * $this->height + 2 * $this->margin]);
 			$this->attr['x'] = $this->scale * $this->xmin - $this->margin;
 			$this->attr['y'] = $this->scale * $this->ymin - $this->margin;
@@ -107,7 +107,7 @@
 			unset($this->svg->attributes()['flipy']);
 			unset($this->svg->attributes()['scale']);
 
-			if (strlen($filename)) {
+			if (strlen((string) $filename)) {
 				$output = $this->svg->asXML($filename);
 			} else {
 				$output = $this->svg->asXML();
