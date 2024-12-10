@@ -19,7 +19,7 @@
 			}
 		}
 
-		public function addNode (string $name, string $content = null, array $attr = []) {
+		public function addNode (string $name, ?string $content = null, array $attr = []) {
 			$node = $this->addChild($name, $content);
 
 			if ($node instanceof SimpleSVGElement) {
@@ -37,7 +37,7 @@
 			return (float) current($this->xpath('//*[@scale]'))->attributes()['scale'];
 		}
 
-		public function rect (float $x, float $y, float $width, float $height, float $rx = null, float $ry = null, array $attr = []) {
+		public function rect (float $x, float $y, float $width, float $height, ?float $rx = null, ?float $ry = null, array $attr = []) {
 			$flipy = $this->flipy();
 			$scale = $this->scale();
 
@@ -167,7 +167,7 @@
 			$this->addNode('path', null, $attr);
 		}
 
-		public function text (float $x, float $y, string $text = null, array $attr = []) {
+		public function text (float $x, float $y, ?string $text = null, array $attr = []) {
 			$flipy = $this->flipy();
 			$scale = $this->scale();
 
@@ -205,7 +205,7 @@
 			$this->addNode('polyline', null, $attr);
 		}
 
-		public function sino (float $x, float $y, float $width = null, float $height, float $phase = 0, array $attr = []) {
+		public function sino (float $x, float $y, ?float $width = null, float $height, float $phase = 0, array $attr = []) {
 			$points = [];
 
 			for ($t = 0; $t <= $width; $t++) {
