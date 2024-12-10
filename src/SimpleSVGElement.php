@@ -205,7 +205,7 @@
 			$this->addNode('polyline', null, $attr);
 		}
 
-		public function sino (float $x, float $y, ?float $width = null, float $height, float $phase = 0, array $attr = []) {
+		public function sino (float $x, float $y, float $width, float $height, float $phase = 0, array $attr = []) {
 			$points = [];
 
 			for ($t = 0; $t <= $width; $t++) {
