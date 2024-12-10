@@ -21,7 +21,10 @@
 
 		public function addNode (string $name, string $content = null, array $attr = []) {
 			$node = $this->addChild($name, $content);
-			$node->addAttributes($attr);
+
+			if ($node instanceof SimpleSVGElement) {
+				$node->addAttributes($attr);
+			}
 
 			return $node;
 		}
@@ -203,7 +206,7 @@
 		}
 
 		public function sino (float $x, float $y, float $width = null, float $height, float $phase = 0, array $attr = []) {
-			$points = null;
+			$points = [];
 
 			for ($t = 0; $t <= $width; $t++) {
 				$v = $height * sin(pi() * $t / 100 + $phase);

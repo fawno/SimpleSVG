@@ -25,7 +25,7 @@
 		protected $margin = null;
 		protected $flipy = 1;
 
-		public function __construct (float $width, float $height, string $units = null, float $scale = 1, array $attr = []) {
+		public function __construct (float $width, float $height, ?string $units = null, float $scale = 1, array $attr = []) {
 			$this->attr = $attr;
 			$this->width = $width;
 			$this->height = $height;
@@ -68,17 +68,17 @@
 			return $this->ymin;
 		}
 
-		public function setXmin (float $xmin = null) {
+		public function setXmin (?float $xmin = null) {
 			$this->xmin = $xmin;
 		}
 
-		public function setYmin (float $ymin = null) {
+		public function setYmin (?float $ymin = null) {
 			$this->ymin = $ymin;
 			$this->flipy = ($this->ymin < 0) ? -1 : 1;
 			$this->svg->addAttributes(['flipy' => $this->flipy]);
 		}
 
-		public function setUnits (string $units = null) {
+		public function setUnits (?string $units = null) {
 			$this->units = $units;
 		}
 
@@ -87,7 +87,7 @@
 			$this->svg->addAttributes(['scale' => $this->scale]);
 		}
 
-		public function setMargin (float $margin = null) {
+		public function setMargin (?float $margin = null) {
 			$this->margin = $margin;
 		}
 
